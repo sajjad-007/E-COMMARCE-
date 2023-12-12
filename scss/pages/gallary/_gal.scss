@@ -1,0 +1,138 @@
+#gallary{
+    padding: 100px 0 90px 0;
+    background-color: #FEF8E4;
+    .gal_wrapper_box1 {
+        display: flex;
+        column-gap: 60px;
+        .gal_box_img {
+            width: 582px;
+            height: 362px;
+            overflow: hidden;
+            margin-left: 34px;
+            picture img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .gal_box_cont {
+            margin: 59px 0 59px 0;
+            span {
+                @include number;
+            }
+            h3 {
+                @include sub_heading;
+                margin: 32px  0 20px 0;
+                width: 403px;
+            }
+            p {
+                @include paragraph;
+                width: 415px;
+            }
+        }
+        .gal_shape1 {
+            position: relative;
+            right: 0;
+            top: 22px;
+            img {
+                position: absolute;
+                right: 1075px;
+                top: 22px;
+            }
+        }
+    }
+    .gal_wrapper_box2 {
+        display: flex;
+        position: relative;
+        .gal_box_cont {
+            margin-left: 34px;
+            z-index: 22;
+            span {
+                @include number;
+                margin: 58px 0 32px 0;
+            }
+            h3 {
+                @include sub_heading;
+                margin: 32px  0 20px 0;
+                width: 509px;
+            }
+            p {
+                @include paragraph;
+                margin: 32px  0 22px 0;
+                width: 429px;
+            }
+        }
+        .gal_box_img {
+            width: 567px;
+            height: 432px;
+            z-index: 22;
+            overflow: hidden;
+            position: relative;
+            top: -36px;
+            left: 73px;
+            picture {
+                width: 100%;
+                height: 100%;
+                img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+        .gal_box2_shape {
+            width: 266px;
+            height: 277px;
+            background: #fbe4dd;
+            z-index: 11;
+            position: absolute;
+            right: -7%;
+            bottom: -2%;
+        }
+    }
+    .gal_wrapper_box3 {
+        display: flex;
+        position: relative;
+        .gal_box_cont {
+            width: 401px;
+            span {
+                @include number;
+                margin: 60px 0 32px 0;
+            }
+            h3 {
+                @include sub_heading;
+                margin: 32px  0 20px 0;
+            }
+            p {
+                @include paragraph;
+                margin: 32px  0 20px 0;
+                width: 401px;
+            }
+        }
+        .gal_box_img {
+            width: 675px;
+            height: 437px;
+            // margin-right: 57px;
+            overflow: hidden;
+            position: relative;
+            top: -36px;
+            left: -58px;
+            picture {
+                width: 100%;
+                height: 100%;
+                img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+        .gla_box3_shape {
+            position: absolute;
+            left: 48%;
+            bottom: 3%;
+        }
+    }
+    
+}
+

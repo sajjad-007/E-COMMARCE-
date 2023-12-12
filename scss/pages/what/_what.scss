@@ -1,0 +1,72 @@
+#what {
+    padding: 100px 0 170px 0;
+    z-index: -1;
+    position: relative;
+    .what_wrapper {
+        display: flex;
+        .what_img {
+            width: 539px;
+            height: 580px;
+            overflow: hidden;
+            position: relative;
+            right: 100px;
+
+            picture {
+                width: 100%;
+                height: 100%;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+        .what_cont {
+            width: 570px;
+            margin-top: 38px;
+            h2 {
+                width: 370px;
+                @include heading ;
+            }
+            p {
+                width: 427px;
+                @include paragraph;
+                margin-top: 20px;
+            }
+            h4 {
+                
+                margin-top: 2px;
+                @include sub_heading;
+            }
+            .para2 {
+                width: 439px;
+                @include paragraph;
+                margin: 20px 0 36px 0;
+            }
+            hgroup {
+                display: flex;
+                flex-direction: column;
+                row-gap: 20px;
+                @include sub_heading;
+            }
+        }
+        
+    }
+    .what_shape1 {
+    position: absolute;
+    height: 138px;
+    width: 20%;
+    background-color: $blue2;
+    z-index: -2;
+    left: 0;
+    bottom: 81px;
+    }
+    .what_shape {
+        position: relative;
+        picture img {
+            position: absolute;
+            left: 47px;
+            bottom: -90px;
+        }
+    }
+}

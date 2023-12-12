@@ -1,0 +1,132 @@
+#plan {
+    margin: 100px 0;
+    .plan_head {
+        h2 {
+            @include heading;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .plan_option {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            column-gap: 12px;
+            margin-top: 40px;
+            h3 {
+                @include sub_heading ;
+            }
+            .option_btn {
+                width: 80px;
+                height: 39px;
+                color: $white;
+                border: 1px solid $blue;
+                border-radius: 23px;
+                position: relative;
+                &::after {
+                    position: absolute;
+                    content: "";
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                    background-color: $blue;
+                    left: 5px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+            }
+            .option_btn_cont {
+                border-radius: 18px;
+                background-color: $blue2;
+                padding: 7px 17px;
+                span {
+                    color: #5F5450;
+                    text-align: center;
+                    font-size: 14px;
+                    font-weight: 500;
+                    line-height: 28%; 
+                    font-family: $fontopen;
+                    text-transform: capitalize;
+                }
+            }
+        }
+    }
+    .plan_package_wrapper {
+        margin-top: 64px;
+        display: flex;
+        align-items: center;
+        column-gap: 30px;
+        .paln_package_item {
+            width: 370px;
+            background-color: yellowgreen;
+            box-shadow: 1px 2px 5px -2px rgba(0,0,0,0.75);
+            &:nth-child(2) .paln_package_item_head {
+                background-color: #FEF8E4;
+            }
+            .paln_package_item_head {
+                padding: 40px 92px 21px 101px;
+                background-color: $blue2;
+                text-align: center;
+                h4 {
+                    color: $black;
+                    font-size: 40px;
+                    font-weight: 700;
+                    line-height: 137.5%;
+                    text-transform: capitalize;
+                }
+                p {
+                    color: $black;
+                    width: 181px;
+                    padding: 15px 0 6px 0;
+                    font-family: $fontluman;
+                    font-size: 20px;
+                    font-weight: 400;
+                    line-height: normal;
+                    letter-spacing: -1px;
+                }
+                .plan_head_money {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                    position: relative;
+                    span {
+                        color: $black;
+                        font-family: $fontopen;
+                        font-size: 72px;
+                        font-weight: 700;
+                        line-height: 171%;
+                    }
+                    .money {
+                        position: absolute;
+                        left: 7px;
+                        top: 26px;
+                    }
+                    h5 {
+                        color: $black;
+                        font-family: $fontopen;
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 156%;
+                        margin-left: 2px;
+                        text-transform: capitalize;
+                    }
+                }
+            }
+            .paln_package_item_foot {
+                padding: 19px 59px 37px 59px;
+                background-color: $white;
+                text-align: center;
+                p {
+                    @include paragraph;
+                    line-height: 177%;
+                    color: #6C7D93;
+                    width: 252px;
+                }
+                .plan_foot_btn a{
+                    @include commonbtn;
+                    margin-top:44px;
+                }
+            }
+        }
+    }
+}

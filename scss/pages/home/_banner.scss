@@ -1,0 +1,49 @@
+#banner {
+    position: relative;
+    .build_wrapper {
+        display: flex;
+        align-items: center;
+        column-gap: 40px;
+        .build_content {
+            padding: 223px 0 20px 0;
+            width: 759px;
+            h1 {
+                width: 759px;
+                color: $black;
+                font-size: 64px;
+                font-family: $fontopen;
+                font-weight: 800;
+                line-height: normal;
+                text-transform: capitalize;
+            }
+            p {
+                width: 571px;
+                margin-top: 24px;
+                @include paragraph
+            }
+            .build_btn {
+                display: flex;
+                align-items: center;
+                // flex-direction: column;
+                column-gap: 24px;
+                a{
+                    @include commonbtn;
+                    margin-top: 24px;
+                    &:last-child {
+                        background-color: transparent;
+                        color: $black;
+                    }
+                    &:hover:last-child {
+                        background-color: $blue;
+                        color: $white;
+                    }
+                }
+            }
+        }
+        .build_image {
+            width: 755px;
+            margin-top: 141px;
+        }
+    }
+    
+}

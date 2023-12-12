@@ -1,0 +1,49 @@
+@mixin commonbtn {
+    padding: 14px 28px;
+    color: $white;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 200%;
+    text-transform: capitalize;
+    font-family: $fontopen;
+    background-color: $blue;
+    display: inline-block;
+    transition: all linear .3s;
+    border: 1px solid $blue;
+    &:hover {
+        background-color: transparent;
+        color: $black;
+    }
+}
+@mixin paragraph {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 200%;
+    color: #5F5450;
+    font-family: $fontluman;
+    text-transform: capitalize;
+
+}
+@mixin heading {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+    color: $black;
+    font-family: $fontopen;
+}
+@mixin sub_heading {
+    color: $black;
+    font-size: 24px;
+    font-weight: 600;
+    font-family: $fontopen;
+    line-height: normal;
+    text-transform: capitalize;
+}
+@mixin number{
+    color: $black2nd;
+    font-size: 64px;
+    font-family: $fontopen;
+    font-weight: 800;
+    line-height: normal;
+} 

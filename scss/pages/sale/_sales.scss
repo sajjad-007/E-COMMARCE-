@@ -1,0 +1,35 @@
+#sale {
+    padding: 150px 0;
+    .heading h2{
+            width: 732px;
+            @include heading;
+            margin-bottom: 64px;
+    }
+    .sale_item_wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        column-gap: 65px;
+        .sale_item_box {
+            width: 346px;
+            .sale_img img{
+                height: 64px;
+                width: 64px;
+            }
+            .sale_box_cont {
+                h3{
+                    color: $black;
+                    font-size: 30px;
+                    font-weight: 700;
+                    line-height: normal;
+                    font-family: $fontopen;
+                    text-transform: capitalize;
+                    margin-top: 28px;
+                }
+                p {
+                    @include paragraph;
+                }
+            }
+        }
+    }
+}

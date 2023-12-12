@@ -1,0 +1,48 @@
+#navbar {
+    background-color: $blue2;
+    padding: 18px 0;
+    .nav_wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .nav_menu {
+            ul{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                column-gap: 66px;
+                li a {
+                    color: $black;
+                    font-size: 18px;
+                    font-weight: 600;
+                    line-height: normal;
+                    text-transform: capitalize;
+                    font-family: $fontopen;
+                    transition: all linear .3s;
+                    position: relative;
+                    &:hover {
+                        color: $blue;
+                    }
+                    &::after {
+                        position: absolute;
+                        content: "";
+                        width: 10px;
+                        height: 2px;
+                        left: 0;
+                        bottom: -5px;
+                        background-color: $white;
+                        transition: all linear .3s;
+                        visibility: hidden;
+                    }
+                    &:hover::after {
+                        width: 40px;
+                        visibility: visible;
+                    }
+                }
+            }
+        }
+        .nav_btn a{
+            @include commonbtn;
+        }
+    }
+}
