@@ -1,2 +1,2 @@
-# E-Commerce-Webpage
-WEB DESIGN USING SCSS 
+# ecommerce-webpage
+Web design by using SCSS
